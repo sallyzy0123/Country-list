@@ -1,4 +1,3 @@
-import {useEffect, useState} from 'react';
 const baseUrl = 'https://restcountries.com/v3.1/all';
 
 const doFetch = async (url, options) => {

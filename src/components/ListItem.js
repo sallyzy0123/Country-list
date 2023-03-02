@@ -1,11 +1,9 @@
 import React from 'react';
-import { AiOutlineRight } from "react-icons/ai";
-import {useNavigate} from 'react-router';
+import {AiOutlineRight} from "react-icons/ai";
 import {Link} from "react-router-dom";
 
 const ListItem = ({country}) => {
     const languages = country.languages;
-    const navigate = useNavigate();
 
     return (
       <tr>
