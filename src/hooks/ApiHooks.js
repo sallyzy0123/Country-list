@@ -22,6 +22,7 @@ const useCountry = () => {
       throw new Error("getCountries, " + error.message);
     }
   };
+
   return {getCountries};
 };
 

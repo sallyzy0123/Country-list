@@ -27,8 +27,8 @@ function List() {
                 <th>Population</th>
                 <th>Languages</th>
             </tr>
-            {countries.map((country) => (
-                <ListItem key={country.id} country={country}/>
+            {countries.map((country, index) => (
+                <ListItem key={index} country={country}/>
             ))}
             </tbody>
             
