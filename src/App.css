@@ -21,9 +21,11 @@ body {
     margin: 128px auto;
     border-radius: 10px;
     padding-bottom: 32px;  */
+    width: 80%;
     display: flex;
     flex-direction: column;
-    padding:40px;
+    padding: 40px;
+    margin: 0 auto;
 }
 .Home-tableList {
     table-layout: auto;
@@ -45,6 +47,8 @@ td {
     margin-bottom: 10px; 
 } */
 .single-card-avatar {
-    /* width: 50px;
-    border-radius: 50%; */
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 50%;
 }

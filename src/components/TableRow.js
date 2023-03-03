@@ -3,7 +3,7 @@ import {AiOutlineRight} from "react-icons/ai";
 import {Link} from "react-router-dom";
 import Image from 'react-bootstrap/Image';
 
-const TableBody = ({country}) => {
+const TableRow = ({country}) => {
     const languages = country.languages;
 
     return (
@@ -32,4 +32,4 @@ const TableBody = ({country}) => {
     );
 }
 
-export default TableBody;
+export default TableRow;

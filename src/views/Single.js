@@ -37,7 +37,7 @@ function Single() {
   return (
     <Card style={{ width: "600px" }}>
        <Card.Header className="single-card-header">
-        <Image src={flag} alt={flagAlt} className="single-card-avatar"/>
+        <Image src={flag} alt={flagAlt} className="single-card-avatar"/> 
         <Card.Text>{name}</Card.Text>
         <Card.Text>{countryInfo.capital}</Card.Text>
       </Card.Header>
@@ -45,7 +45,7 @@ function Single() {
         <Image
           src={flag}
           alt={flagAlt}
-          class="single-card-image"
+          className="single-card-image"
         />
         <Card.Text>
           The country belongs to region and {countryInfo.subregion} sub-region.
