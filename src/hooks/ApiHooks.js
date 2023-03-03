@@ -1,4 +1,4 @@
-const baseUrl = 'https://restcountries.com/v3.1/all';
+const baseUrl = 'https://restcountries.com/v3.1/';
 
 const doFetch = async (url, options) => {
     const response = await fetch(url, options);
@@ -16,13 +16,20 @@ const useCountry = () => {
 
   const getCountries = async () => {
     try {
-      return await doFetch(baseUrl);
+      return await doFetch(baseUrl + 'all');
     } catch (error) {
       throw new Error("getCountries, " + error.message);
     }
   };
 
-  return {getCountries};
+  const getCountryByName = async (name) => {
+    try {
+      return await doFetch(baseUrl + 'name/' + name);
+    } catch (error) {
+      throw new Error("getCountryByName, " + error.message);
+    }
+  };
+  return {getCountries, getCountryByName};
 };
 
 

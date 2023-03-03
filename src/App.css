@@ -39,3 +39,12 @@ td {
 .table-body-flag {
     width: 140px;
 }  
+/* .card {
+    margin: 0 auto; 
+    float: none; 
+    margin-bottom: 10px; 
+} */
+.single-card-avatar {
+    /* width: 50px;
+    border-radius: 50%; */
+}
