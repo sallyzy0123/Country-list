@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react';
-import ListItem from './ListItem';
+import TableBody from './TableBody';
 import {useCountry} from '../hooks/ApiHooks';
+import {Table} from 'react-bootstrap';
 
-function List() {
+function TableList() {
   const [countries, setCountries] = useState([]);
   const {getCountries} = useCountry();
 
@@ -17,25 +18,27 @@ function List() {
   }, []);
 
   return (
-    <div>
-        <table>
-            <tbody>
+    <div className="Home-tableList">
+        <Table striped bordered hover 
+          responsive="xl" >
+            <tbody >
             <tr>
                 <th>flag</th>
                 <th>Nation</th>
                 <th>Regions</th>
                 <th>Population</th>
                 <th>Languages</th>
+                <th></th>
             </tr>
             {countries.map((country, index) => (
-                <ListItem key={index} country={country}/>
+                <TableBody key={index} country={country}/>
             ))}
             </tbody>
             
             
-        </table>
+        </Table>
     </div>
   )
 }
 
-export default List;
+export default TableList;

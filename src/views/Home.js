@@ -1,11 +1,11 @@
 import React from 'react';
-import List from '../components/List';
+import TableList from '../components/TableList';
 
 function Home() {
     return (
       <div>
-        <h1>Country</h1>
-        <List className="Home-list"/>
+        <h1 className="Home-title">Country</h1>
+        <TableList />
       </div>
     );
 }

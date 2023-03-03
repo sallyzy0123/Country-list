@@ -5,7 +5,7 @@ import Single from './views/Single';
 
 function App() {
   return (
-    <div className="App">
+    <div className="country-app">
       <Router>
         <Routes>
           <Route path='/' element={<Home />} />
