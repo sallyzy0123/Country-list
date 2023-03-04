@@ -10,17 +10,6 @@ body {
     /* background-color: aqua; */
 }
 .country-app {
-    /* background-color: aqua; */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: start;
-    width: 520px;
-    min-height: 600px;*/
-    /* background-color:black; */
-    /* text-align: center;
-    margin: 128px auto;
-    border-radius: 10px;
-    padding-bottom: 32px;  */
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -41,11 +30,6 @@ td {
 .table-body-flag {
     width: 140px;
 }  
-/* .card {
-    margin: 0 auto; 
-    float: none; 
-    margin-bottom: 10px; 
-} */
 .single-card-avatar {
     width: 75px;
     height: 75px;
