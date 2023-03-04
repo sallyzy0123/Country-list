@@ -28,6 +28,7 @@ function Home() {
     setSearchInput(e.target.value);
   };
 
+  console.log(countries);
   const getCountry = async () => {
     const countries = await getCountries();
     setCountries(countries);
@@ -44,7 +45,7 @@ function Home() {
 
   useEffect(() => {
     getCountry();
-  },);
+  },[]);
   
     return (
       <Box sx={{ flexGrow: 1 }}>
