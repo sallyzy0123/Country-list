@@ -1,38 +1,40 @@
-
 * {
     box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+            'Lucida Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-      'Lucida Sans', Arial, sans-serif;
 }
-body {
-    /* background-color: aqua; */
-}
+
 .country-app {
-    width: 80%;
-    display: flex;
     flex-direction: column;
     padding: 40px;
+}
+
+.MuiTableCell-root {
+    text-align: center;
+}
+.table-container ul {
+    list-style-type: none;
+}
+
+.single-card {
     margin: 0 auto;
+    width: 50%;
 }
-.Home-tableList {
-    table-layout: auto;
-    width: 100%;  
-    border: 1px solid #cccccc;
-    text-align: center;
+
+.MuiTablePagination-toolbar p {
+    margin: 0;
 }
-td {
-    width: 100px;
-    text-align: center;
-    vertical-align: middle;
+
+.search-input {
+    text-indent: 10px;
 }
+
 .table-body-flag {
     width: 140px;
-}  
-.single-card-avatar {
-    width: 75px;
-    height: 75px;
-    object-fit: cover;
-    border-radius: 50%;
+}
+
+.single-card-icon-expand-more {
+    margin-right: auto;
 }
