@@ -12,9 +12,21 @@ import {Link} from "react-router-dom";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import {orange} from '@mui/material/colors';
+import {styled} from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import {useParams} from 'react-router';
 import {useCountry} from '../hooks/ApiHooks';
+
+const ExpandMore = styled((props) => {
+  const { expand, ...other } = props;
+  return <IconButton {...other} />;
+})(({ theme, expand }) => ({
+  transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
+  marginLeft: 'auto',
+  transition: theme.transitions.create('transform', {
+    duration: theme.transitions.duration.shortest,
+  }),
+}));
 
 const Single = () => {
   const {name} = useParams();
@@ -75,9 +87,9 @@ const Single = () => {
         <IconButton aria-label="location">
           <LocationOnIcon />
         </IconButton>
-        <IconButton aria-label="expand">
+        <ExpandMore>
           <ExpandMoreIcon />
-        </IconButton>
+        </ExpandMore>
       </CardActions>
     </Card>
   );

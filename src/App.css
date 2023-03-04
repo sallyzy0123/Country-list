@@ -1,7 +1,5 @@
 * {
     box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-            'Lucida Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -11,11 +9,10 @@
     padding: 40px;
 }
 
-.MuiTableCell-root {
-    text-align: center;
-}
 .table-container ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .single-card {

@@ -28,7 +28,6 @@ function Home() {
     setSearchInput(e.target.value);
   };
 
-  console.log(countries);
   const getCountry = async () => {
     const countries = await getCountries();
     setCountries(countries);
